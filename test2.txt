@@ -1,0 +1,24 @@
+create Sun 5778 100000 0 0.1
+create planetSystem Sun 5778 100000 0 0.1
+create planetSystem AlphaCentauri 6000 120000 0 0.2
+addPlanet Mercury Sun 700 0 0 0.05
+addPlanet Venus Sun 737 9200000 90 0.03
+addPlanet Earth Mercury 288 101325 50 0.0005
+addPlanet Mars Venus 210 600 30 0.02
+addPlanet Jupiter Earth 165 1000 80 0.1
+addPlanet Mercury Jupiter 100 500 40 0.05
+addSatellite Moon Earth 250 0 0 0.001
+addSatellite Moon Earth 250 0 0 0.001
+addSatellite InvalidMoon Moon 200 0 0 0.001
+addSatellite NonExistent NonPlanet 200 0 0 0.001
+addPlanet Invalid Jupiter -100 1000 50 0.01
+addPlanet Invalid Jupiter 300 1000 150 0.01
+addPlanet Invalid Jupiter 200 1000 50 -0.01
+addPlanet Invalid Moon 300 1000 50 0.01
+getPathTo NonExistent
+printMissionReport NonExistent
+create Invalid 1 2 3
+addPlanet
+findRadiationAnomalies
+printMissionReport Too Many Args
+exit

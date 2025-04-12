@@ -1,0 +1,17 @@
+create planetSystem Sun 5778 100000 0 0.1
+addPlanet Mercury Sun 700 0 0 0.05
+addPlanet Venus Sun 737 9200000 90 0.03
+addPlanet Earth Sun 288 101325 50 0.0005
+addSatellite Moon Earth 250 0 0 0.001
+addPlanet Mars Earth 210 600 30 0.02
+addSatellite Phobos Mars 200 0 0 0.002
+addSatellite Deimos Mars 180 0 0 0.001
+addPlanet Jupiter Mars 165 1000 80 0.1
+findRadiationAnomalies 0.01
+getPathTo Earth
+getPathTo Moon
+getPathTo Phobos
+getPathTo Jupiter
+printMissionReport
+printMissionReport Earth
+exit
